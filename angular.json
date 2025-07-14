@@ -1,0 +1,130 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+<<<<<<< Updated upstream
+    "third_Project": {
+=======
+    "my-project2": {
+>>>>>>> Stashed changes
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+<<<<<<< Updated upstream
+            "outputPath": "dist/third-project",
+=======
+            "outputPath": "dist/my-project2",
+>>>>>>> Stashed changes
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+<<<<<<< Updated upstream
+              "src/styles.css",
+               "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
+=======
+              "src/styles.css"
+            ],
+            "scripts": []
+>>>>>>> Stashed changes
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+<<<<<<< Updated upstream
+              "browserTarget": "third_Project:build:production"
+            },
+            "development": {
+              "browserTarget": "third_Project:build:development"
+=======
+              "browserTarget": "my-project2:build:production"
+            },
+            "development": {
+              "browserTarget": "my-project2:build:development"
+>>>>>>> Stashed changes
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+<<<<<<< Updated upstream
+            "browserTarget": "third_Project:build"
+=======
+            "browserTarget": "my-project2:build"
+>>>>>>> Stashed changes
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+<<<<<<< Updated upstream
+=======
+  },
+  "cli": {
+    "analytics": false
+>>>>>>> Stashed changes
+  }
+}
