@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+<<<<<<< Updated upstream
 import { Router, RouterModule } from '@angular/router';
+=======
+>>>>>>> Stashed changes
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+<<<<<<< Updated upstream
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
@@ -13,4 +17,10 @@ export class AppComponent {
   }
 
   
+=======
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'my-project2';
+>>>>>>> Stashed changes
 }

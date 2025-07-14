@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -12,9 +13,19 @@ const routes: Routes = [
 
   {path:'**',redirectTo:'home'}
 ];
+=======
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [];
+>>>>>>> Stashed changes
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+<<<<<<< Updated upstream
 export class AppRoutingModule { }
+=======
+export class AppRoutingModule { }
+>>>>>>> Stashed changes
