@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+  public isShow:boolean = false;
+
+  handleIsShow(){
+    this.isShow = !this.isShow
+  }
+
 }

@@ -3,11 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-<<<<<<< Updated upstream
-    "third_Project": {
-=======
     "my-project2": {
->>>>>>> Stashed changes
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -17,11 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-<<<<<<< Updated upstream
-            "outputPath": "dist/third-project",
-=======
             "outputPath": "dist/my-project2",
->>>>>>> Stashed changes
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -33,16 +25,9 @@
               "src/assets"
             ],
             "styles": [
-<<<<<<< Updated upstream
-              "src/styles.css",
-               "node_modules/bootstrap/dist/css/bootstrap.min.css"
-            ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
-=======
               "src/styles.css"
             ],
             "scripts": []
->>>>>>> Stashed changes
           },
           "configurations": {
             "production": {
@@ -75,17 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-<<<<<<< Updated upstream
-              "browserTarget": "third_Project:build:production"
-            },
-            "development": {
-              "browserTarget": "third_Project:build:development"
-=======
               "browserTarget": "my-project2:build:production"
             },
             "development": {
               "browserTarget": "my-project2:build:development"
->>>>>>> Stashed changes
             }
           },
           "defaultConfiguration": "development"
@@ -93,11 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-<<<<<<< Updated upstream
-            "browserTarget": "third_Project:build"
-=======
             "browserTarget": "my-project2:build"
->>>>>>> Stashed changes
           }
         },
         "test": {
@@ -120,11 +94,8 @@
         }
       }
     }
-<<<<<<< Updated upstream
-=======
   },
   "cli": {
     "analytics": false
->>>>>>> Stashed changes
   }
 }
