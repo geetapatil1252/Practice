@@ -9,12 +9,14 @@ import { FormsModule } from '@angular/forms';
 import {  HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { DollarToRupeePipe } from './shared/custom-pipes/DollarToRupee/dollar-to-rupee.pipe';
 
 @NgModule({
   declarations: [
     AppComponent, 
     HomeComponent,
-     AboutComponent],
+     AboutComponent,
+     DollarToRupeePipe],
   imports: [
     
     BrowserModule,
