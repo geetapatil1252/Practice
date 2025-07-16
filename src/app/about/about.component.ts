@@ -13,4 +13,15 @@ export class AboutComponent {
     this.isShow = !this.isShow
   }
 
+  // Welcome
+
+  public userName:string= "";
+  public nameSubmitted:boolean = false;
+
+  submitName(){
+    if(this.userName.trim()){
+      this.nameSubmitted = true
+    }
+  }
+
 }
