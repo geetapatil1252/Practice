@@ -25,10 +25,10 @@ import { DollarToRupeePipe } from './shared/custom-pipes/DollarToRupee/dollar-to
     HttpClientModule,
     RouterModule
   ],
-  providers: [
-   
-    
-  ],
+  providers: [],
+
+
+  bootstrap: [AppComponent]
 
 
 })
