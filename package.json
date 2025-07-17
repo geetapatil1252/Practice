@@ -1,9 +1,5 @@
 {
-<<<<<<< Updated upstream
-  "name": "third-project",
-=======
   "name": "my-project2",
->>>>>>> Stashed changes
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

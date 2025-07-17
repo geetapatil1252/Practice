@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+  public isShow:boolean = false;
+
+  handleIsShow(){
+    this.isShow = !this.isShow
+  }
+
+  // Welcome
+
+  public userName:string= "";
+  public nameSubmitted:boolean = false;
+
+  submitName(){
+    if(this.userName.trim()){
+      this.nameSubmitted = true
+    }
+  }
+
 }
