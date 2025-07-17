@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -22,6 +22,15 @@ export class AboutComponent {
     if(this.userName.trim()){
       this.nameSubmitted = true
     }
+  }
+
+
+  // Signal example
+
+  public count = signal<number>(0)
+
+  addCount(){
+    this.count.set(this.count() + 1)
   }
 
 }
