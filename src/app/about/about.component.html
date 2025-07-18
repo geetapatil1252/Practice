@@ -19,3 +19,11 @@
 <button (click)="submitName()" class="btn btn-primary">Submit</button>
 
 <p *ngIf="nameSubmitted">Welcome, {{userName}}</p>
+
+
+<hr class="border border-danger">
+
+<h4>Signal</h4>
+
+<h5>Current Count: {{count()}}</h5>
+<button class="btn btn-success" (click)="addCount()">Add Count</button>
