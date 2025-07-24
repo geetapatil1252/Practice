@@ -1,1 +1,29 @@
 <p>about works!</p>
+
+<h1>Welcome In About Component</h1>
+
+<h4 *ngIf="isShow"> This Is Simple Toggle Show !</h4>
+
+
+<button (click)="handleIsShow()">{{isShow ? "Hide Data" : "Show Data"}}</button>
+
+
+<h4>Dollar To Rupee Conversion</h4>
+{{100 |dollarToRupee}}
+
+<hr class="border border-danger">
+
+<h4>Hello Angular</h4>
+
+<input type="text" [(ngModel)]="userName" placeholder="Enter Your Name">
+<button (click)="submitName()" class="btn btn-primary">Submit</button>
+
+<p *ngIf="nameSubmitted">Welcome, {{userName}}</p>
+
+
+<hr class="border border-danger">
+
+<h4>Signal</h4>
+
+<h5>Current Count: {{count()}}</h5>
+<button class="btn btn-success" (click)="addCount()">Add Count</button>

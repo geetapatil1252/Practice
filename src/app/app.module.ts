@@ -9,9 +9,16 @@ import { FormsModule } from '@angular/forms';
 import {  HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { DollarToRupeePipe } from './shared/custom-pipes/DollarToRupee/dollar-to-rupee.pipe';
+// import { LivePreviewComponent } from './live-preview/live-preview.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent],
+  declarations: [
+    AppComponent, 
+    HomeComponent,
+     AboutComponent,
+     DollarToRupeePipe,
+     ],
   imports: [
     
     BrowserModule,
@@ -20,10 +27,11 @@ import { AboutComponent } from './about/about.component';
     HttpClientModule,
     RouterModule
   ],
-  providers: [
-   
-    
-  ],
+  providers: [],
+
+
   bootstrap: [AppComponent]
+
+
 })
 export class AppModule { }
